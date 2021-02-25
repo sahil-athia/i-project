@@ -1,11 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
 
-function App() {
-  const [state, setState] = useState({isLoggedIn: false})
+import AppNav from "./components/AppNav"
+import HomeInfo from "./components/HomeInfo"
+import AcessBox from "./components/AccessBox"
+import AccessBox from './components/AccessBox';
 
+function App() {
   useEffect(() => {
     const script = document.createElement('script');
   
@@ -22,15 +24,9 @@ function App() {
   
   return (
     <div className="App">
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand className="brand" >App</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link className="link" href="#/ms/signup/60381a660dd8ef0004dd0f58#ms-hide-element" >Signup</Nav.Link>
-        <Nav.Link className="link" href="#/ms/login#ms-hide-element" >Login</Nav.Link>
-        <Nav.Link className="link" href=" #/ms/logout">Logout</Nav.Link>
-      </Nav>
-    </Navbar>
-    <div data-ms-member="email"></div>
+      <AppNav />
+      <AccessBox />
+      <HomeInfo />
     </div>
   );
 }
