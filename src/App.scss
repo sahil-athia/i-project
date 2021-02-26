@@ -24,7 +24,7 @@
 
     .registration-link {
       width: 50%;
-      height: 20%;
+      height: 15%;
       margin: 1vh;
 
       .button {
@@ -41,6 +41,7 @@
     background-color: #2aa8ff;
   }
   .info-box {
+    font-size: 150%;
     width: 60%;
     height: 35%;
     border: 2px solid rgb(204, 204, 204);
@@ -62,6 +63,14 @@
     }
   }
 
+}
+
+@media (max-width: 768px) {
+  .App {
+    .info-box {
+      font-size: 100%;
+    }
+  } 
 }
 
 
