@@ -1,10 +1,9 @@
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react'
 
 import AppNav from "./components/AppNav"
 import HomeInfo from "./components/HomeInfo"
-import AcessBox from "./components/AccessBox"
 import AccessBox from './components/AccessBox';
 
 function App() {
