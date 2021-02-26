@@ -10,8 +10,8 @@ function App() {
   useEffect(() => {
     const script = document.createElement('script');
   
-    script.src = "https://api.memberstack.io/static/memberstack.js?custom";
-    script.setAttribute('data-memberstack-id', '437974800f22566d2a57ac00bdc867ef');
+    script.src = process.env.REACT_APP_BACKEND_API;
+    script.setAttribute('data-memberstack-id', process.env.REACT_APP_DATA_ID);
     script.async = true;
   
     document.body.appendChild(script);
